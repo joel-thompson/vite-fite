@@ -22,8 +22,10 @@ function useDarkMode(defaultValue?: boolean): UseDarkModeOutput {
   const toggle = () => {
     if (!isDarkMode) {
       document.documentElement.classList.add("dark");
+      document.documentElement.setAttribute("data-theme", "dracula");
     } else {
       document.documentElement.classList.remove("dark");
+      document.documentElement.setAttribute("data-theme", "winter");
     }
     setDarkMode((prev) => !prev);
   };

@@ -4,8 +4,10 @@
     <script>
       if (localStorage.darkMode === 'true' || (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark')
+        document.documentElement.setAttribute("data-theme", "dracula");
       } else {
         document.documentElement.classList.remove('dark')
+        document.documentElement.setAttribute("data-theme", "winter");
       }
   </script>
     <meta charset="UTF-8" />
