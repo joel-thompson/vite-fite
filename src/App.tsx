@@ -15,10 +15,10 @@ function App() {
     <AppBackdrop>
       <h1 className="text-3xl font-bold">Hello world!</h1>
       <div className="flex flex-col">
-        <button className="w-48" onClick={() => setCount((count) => count + 1)}>
+        <button className="btn w-48" onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <div className="bg-neutral-600 dark:bg-black h-2 w-48"></div>
+        {/* <div className="bg-neutral-600 dark:bg-black h-2 w-48"></div> */}
         <button className="w-48" onClick={toggle}>
           dark mode is {isDarkMode.toString()}
         </button>
