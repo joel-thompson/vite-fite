@@ -9,6 +9,10 @@ export default {
   },
   // eslint-disable-next-line no-undef
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["winter", "dracula"],
+    // darkTheme: "dracula",
+  },
   darkMode: 'class',
 }
 
