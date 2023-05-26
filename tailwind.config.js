@@ -11,7 +11,7 @@ export default {
   plugins: [require("daisyui")],
   daisyui: {
     themes: ["winter", "dracula"],
-    // darkTheme: "dracula",
+    darkTheme: "dracula",
   },
   darkMode: 'class',
 }
